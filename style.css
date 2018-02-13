@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-weight: 300;
+  font-size: 5rem;
+  margin-bottom: 1rem; }
+
+.lead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black; }
+
+/* NAVIGATION */
+.clearfix {
+  content: "";
+  clear: both;
+  display: table; }
+
+header {
+  min-height: 20vh;
+  width: 100%;
+  color: #5C2777; }
+  header svg {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative; }
+  header .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  header .menu-toggle {
+    display: inline-block;
+    position: fixed;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 2.5em;
+    color: #5C2777; }
+    header .menu-toggle:hover, header .menu-toggle:focus {
+      color: #74428E; }
+  header .main-menu {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-x: visible;
+    transition: left 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999; }
+    header .main-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 2.5em 0 0;
+      min-height: 100%;
+      min-width: 200px;
+      background: #1a1a1a; }
+      header .main-menu ul li:first-child a {
+        border-top: 1px solid #383838; }
+      header .main-menu ul a {
+        display: block;
+        padding: .75em 15px;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1em;
+        color: #8172AF;
+        text-decoration: none;
+        border-bottom: 1px solid #383838; }
+        header .main-menu ul a:hover, header .main-menu ul a:focus {
+          background: #5C2777; }
+    header .main-menu .menu-close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #5C2777; }
+  header .main-menu:target,
+  header .main-menu[aria-expanded="true"] {
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25); }
+  header .main-menu:target .menu-close,
+  header .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001; }
+  header .main-menu:target ul,
+  header .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000; }
+  header .main-menu:target + .backdrop,
+  header .main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: default; }
+
+.jumbotron {
+  padding-top: 30vh;
+  min-height: 50vh;
+  padding-bottom: 0; }
+
+.shape {
+  padding-top: 0;
+  margin-top: -4px; }
+  .shape svg {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50vw; }
+
+.about {
+  position: absolute;
+  margin-top: -100vh;
+  color: white; }
+  .about .container-half {
+    width: 50%;
+    padding-left: 10rem; }
+
+/* MEDIA QUERIES FOR DESKTOPS */
+@media (min-width: 1301px) {
+  .navbar {
+    display: flex;
+    align-items: baseline;
+    background-color: white; }
+    .navbar .menu-toggle {
+      display: none; }
+    .navbar .logo img {
+      padding-left: 10px;
+      padding-bottom: 10px;
+      width: 80%; }
+  .main-menu {
+    position: initial;
+    right: 0;
+    left: 0 !important;
+    max-height: 3rem;
+    float: right;
+    max-width: 100vw; }
+    .main-menu .menu-close {
+      display: none; }
+    .main-menu ul {
+      display: flex;
+      align-content: flex-end;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      max-height: 2rem;
+      float: right;
+      padding-top: 1rem;
+      background-color: transparent !important;
+      min-width: 150%;
+      background: none; }
+      .main-menu ul li a {
+        display: inline-block;
+        padding-top: 0;
+        color: #8172AF;
+        min-width: 3rem;
+        border: 0 !important; }
+        .main-menu ul li a:hover, .main-menu ul li a:focus {
+          background: transparent;
+          border-bottom: 2px solid #8172AF; } }
