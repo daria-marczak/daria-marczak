@@ -7,10 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Daria Marczak portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
-  <header class="clearfix">
+  <header>
     <div class="navbar">
       <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
         aria-label="Open main menu">
@@ -18,8 +19,7 @@
         <span class="fa fa-bars"></span>
       </a>
       <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
-        <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
-          aria-label="Close main menu">
+        <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
           <span class="sr-only">Close main menu</span>
           <span class="fa fa-times" aria-hidden="true"></span>
         </a>
@@ -50,13 +50,10 @@
       <defs>
         <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
 
-          <stop offset="0%" stop-color="#946AAA">
-            <animate attributeName="stop-color" values="#946AAA; #AC4B80; #946AAA" dur="4s" repeatCount="indefinite"></animate>
-          </stop>
 
-          <stop offset="100%" stop-color="#912A62">
-            <animate attributeName="stop-color" values="#912A62; #45135F; #912A62" dur="4s" repeatCount="indefinite"></animate>
-          </stop>
+
+          <stop offset="0%" stop-color="#912A62" />
+          <stop offset="100%" stop-color="#45135F" />
 
         </linearGradient>
       </defs>
@@ -68,25 +65,8 @@
   </header>
 
   <!-- ABOUT SECTION -->
-  <section class="shape">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <linearGradient id="logo-gradient-inverse" x1="50%" y1="0%" x2="50%" y2="100%">
-
-        <stop offset="0%" stop-color="#912A62">
-          <animate attributeName="stop-color" values="#912A62; #45135F; #912A62" dur="4s" repeatCount="indefinite"></animate>
-        </stop>
-
-        <stop offset="100%" stop-color="#946AAA">
-          <animate attributeName="stop-color" values="#946AAA; #AC4B80; #946AAA" dur="4s" repeatCount="indefinite"></animate>
-        </stop>
-
-      </linearGradient>
-      <polygon fill="url(#logo-gradient-inverse)" points="0,0 100,0 0,100" />
-    </svg>
-  </section>
-  <!-- ABOUT SECTION -->
-  <section class="about" id="about">
-    <div class="container-half">
+  <section class="about clearfix" id="about">
+    <div class="container">
       <h2>About</h2>
       <p>In eu ex vel dolor aliquam lobortis. Vestibulum congue felis a faucibus lacinia. Vivamus orci nulla, vehicula eget
         est eget, vehicula aliquam enim. Etiam malesuada, ipsum ut dictum semper, libero ligula lobortis augue, vitae faucibus
@@ -96,18 +76,28 @@
         porta condimentum consequat. Integer nec risus ligula. Pellentesque id tortor elit. Phasellus ac libero nec arcu
         malesuada vestibulum.</p>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="white" points="0,100 100,0 100,100"/>
+  </svg>
   </section>
 
   <section class="technologies" id="technologies">
     <div class="container">
       <h2>Technologies</h2>
-      <p>In eu ex vel dolor aliquam lobortis. Vestibulum congue felis a faucibus lacinia. Vivamus orci nulla, vehicula eget
-        est eget, vehicula aliquam enim. Etiam malesuada, ipsum ut dictum semper, libero ligula lobortis augue, vitae faucibus
-        libero metus at nulla. Suspendisse quis hendrerit massa. Aliquam erat volutpat. In ullamcorper, lacus id vulputate
-        iaculis, velit felis congue lacus, placerat blandit nisl mi et est. Suspendisse sed bibendum mauris. Fusce fringilla
-        erat justo, porta posuere dolor maximus et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-        porta condimentum consequat. Integer nec risus ligula. Pellentesque id tortor elit. Phasellus ac libero nec arcu
-        malesuada vestibulum.</p>
+      <div class="row">
+      	<div class="column">
+	      	<div class="element">
+	      		<div class="square">
+	      			<div class="circle"><i class="fab fa-html5"></i></div>
+	      		</div>
+	      		<div class="text"><p>In eu ex vel dolor aliquam lobortis. Vestibulum congue felis a faucibus lacinia. Vivamus orci nulla, vehicula eget</p></div>
+	      	</div>
+	      		
+	    </div>
+      	<div class="column">
+      	
+      	</div>
+      </div>
     </div>
   </section>
 
@@ -137,7 +127,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="clearfix">
     <div class="container">
       <p>Copyright Daria Marczak</p>
     </div>
