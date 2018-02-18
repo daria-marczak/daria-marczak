@@ -52,10 +52,29 @@ h2:after {
   padding-bottom: 1em;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 .lead {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+}
+
+button {
+  padding: 0.95em 0.89em;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $color-primary-4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 /* NAVIGATION */
@@ -71,6 +90,12 @@ h2:after {
   grid-template-columns: repeat(auto-fill, minmax(24em, 1fr));
   grid-gap: 1em;
   margin-top: 2rem;
+}
+
+.row-four {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 header {
@@ -222,6 +247,7 @@ header {
 /* TECHNOLOGIES */
 
 .technologies {
+  padding-bottom: 2rem;
   .row {
     display: grid;
     grid-template-columns: 1fr;
@@ -264,6 +290,75 @@ header {
     }
     .text h3 {
       margin-bottom: 0;
+    }
+  }
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  background-color: #fcfcfc;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  h2 {
+    text-align: left;
+  }
+  .image {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  @mixin layer-plus-hover() {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    transition: .6s;
+    background-color: rgba(72, 18, 94, 0.46);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+    span {
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  @mixin layer-entrails() {
+    position: absolute;
+  }
+  .layer {
+    @include layer-plus-hover;
+    div {
+      @include layer-entrails;
     }
   }
 }
@@ -314,20 +409,6 @@ header {
       textarea {
         grid-auto-columns: 2;
         grid-row: 1/4;
-      }
-    }
-    button {
-      padding: 0.95em 0.89em;
-      border-radius: 5px;
-      text-transform: uppercase;
-      font-weight: bold;
-      background-color: $color-primary-4;
-      border: none;
-      color: white;
-      cursor: pointer;
-      transition: 0.6s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
       }
     }
   }
@@ -394,9 +475,18 @@ footer {
       }
     }
   }
-  .technologies .row {
+  .row-four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+  .technologies .row,
+  .projects .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .projects .image {
+    text-align: center;
   }
   form {
     grid-template-columns: 1fr 1fr !important;
