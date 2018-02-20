@@ -46,7 +46,7 @@ h1 {
 h2:after {
   display: block;
   content: "";
-  border-top: 5px solid $color-primary-4;
+  border-top: 5px solid $color-primary-0;
   width: 6%;
   transform: translateY(0.5em);
   padding-bottom: 1em;
@@ -67,7 +67,7 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: $color-primary-4;
+  background: linear-gradient(0deg, $color-secondary-1-0, $color-primary-0);
   border: none;
   color: white;
   cursor: pointer;
@@ -101,7 +101,7 @@ button {
 header {
   min-height: 20vh;
   width: 100%;
-  color: $color-primary-4;
+  color: $color-primary-0;
   svg {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -225,9 +225,9 @@ header {
 /* ABOUT SECTION */
 
 .about {
-  background-color: #2D0342;
+  background-color: #5C2777;
   color: white;
-  margin-top: -5px;
+  margin-top: -6px;
   padding-top: 0;
   h2:after {
     border-top: 5px solid white;
@@ -469,13 +469,13 @@ footer {
       li a {
         display: inline-block;
         padding-top: 0;
-        color: $color-primary-4;
+        padding-bottom: 0;
+        color: $color-primary-0;
         min-width: 3rem;
         border: 0 !important;
         &:hover,
         &:focus {
           background: transparent;
-          border-bottom: 2px solid $color-primary-4;
         }
       }
     }
