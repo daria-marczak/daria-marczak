@@ -317,6 +317,7 @@ header {
     img {
       width: 100%;
       height: auto;
+      vertical-align: middle;
     }
     &:before,
     &:after {
@@ -347,6 +348,7 @@ header {
       color: white;
       text-align: center;
       margin: 0 auto;
+      width: 90%;
       h4 {
         text-transform: uppercase;
         font-weight: bold;
