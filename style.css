@@ -37,8 +37,8 @@ p {
   color: black; }
 
 button {
-  padding: 0.95em 0.89em;
-  border-radius: 5px;
+  padding: 0.95em 1.5rem;
+  border-radius: 25px;
   text-transform: uppercase;
   font-weight: bold;
   background: linear-gradient(0deg, #912A62, #5C2777);
