@@ -302,8 +302,8 @@ header {
   padding-bottom: 2rem;
   text-align: center;
   button a {
-  	text-decoration: none;
-  	color: white;
+    text-decoration: none;
+    color: white;
   }
   h2 {
     text-align: left;
@@ -313,7 +313,7 @@ header {
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     img {
       width: 100%;
       height: auto;
@@ -339,10 +339,7 @@ header {
     cursor: pointer;
     &:hover {
       opacity: 1;
-    box-shadow: 
-	inset 0 0 0 0 rgba(74, 74, 74, 0.85),
-	inset 0 0 0 16px rgba(245, 245, 245, 0.25),
-	0 1px 2px rgba(0,0,0,0.1);
+      box-shadow: inset 0 0 0 0 rgba(74, 74, 74, 0.85), inset 0 0 0 16px rgba(245, 245, 245, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
     }
     span {
       color: white;
@@ -482,9 +479,9 @@ footer {
       }
     }
   }
-  .row-four {
+  .row-three {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
   .technologies .row,

@@ -369,9 +369,9 @@ footer {
         border: 0 !important; }
         .main-menu ul li a:hover, .main-menu ul li a:focus {
           background: transparent; }
-  .row-four {
+  .row-three {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem; }
   .technologies .row,
   .projects .row {
