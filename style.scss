@@ -62,7 +62,7 @@ p {
   color: black;
 }
 
-button {
+.button {
   padding: 0.95em 1.5rem;
   border-radius: 25px;
   text-transform: uppercase;
@@ -90,6 +90,13 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(24em, 1fr));
   grid-gap: 1em;
   margin-top: 2rem;
+}
+
+.row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .row-four {
@@ -353,6 +360,15 @@ header {
       p {
         font-size: 14px;
       }
+      .view {
+        background-color: #1f1f1f;
+        color: white;
+        border-radius: 25px;
+        padding: 0.5rem 0.95rem;
+        border: none;
+        cursor: pointer;
+        margin-left: 0.5rem;
+      }
     }
   }
   @mixin layer-entrails() {
@@ -386,18 +402,18 @@ header {
     h2 {
       text-align: left;
     }
-    form {
+    .form {
       padding-top: 3.688rem;
       padding-bottom: 1.875rem;
       display: grid;
       width: 100%;
-      opacity: 0.85;
       grid-template-columns: 1fr;
       grid-gap: 1rem;
       input,
       textarea {
         font-family: $paragraph-font;
         border-radius: 2px;
+        opacity: 0.85;
         font-weight: 700;
         border: transparent;
         color: gray;
@@ -414,6 +430,9 @@ header {
         grid-auto-columns: 2;
         grid-row: 1/4;
       }
+      button {
+        display: block;
+      }
     }
   }
 }
@@ -426,6 +445,14 @@ footer {
   padding-bottom: 0;
   width: 100%;
   font-size: 0.7em;
+  .media-square {
+    float: right;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 /* MEDIA QUERIES FOR DESKTOPS */
@@ -492,7 +519,7 @@ footer {
   .projects .image {
     text-align: center;
   }
-  form {
+  .form {
     grid-template-columns: 1fr 1fr !important;
     input {
       grid-auto-columns: 2;

@@ -36,7 +36,7 @@ p {
   font-weight: bold;
   color: black; }
 
-button {
+.button {
   padding: 0.95em 1.5rem;
   border-radius: 25px;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ button {
   color: white;
   cursor: pointer;
   transition: 0.6s ease-in-out; }
-  button:hover {
+  .button:hover {
     transform: scale(1.1); }
 
 /* NAVIGATION */
@@ -60,6 +60,12 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(24em, 1fr));
   grid-gap: 1em;
   margin-top: 2rem; }
+
+.row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 .row-four {
   padding-top: 1rem;
@@ -274,6 +280,14 @@ header {
         font-weight: bold; }
       .projects .layer span p {
         font-size: 14px; }
+      .projects .layer span .view {
+        background-color: #1f1f1f;
+        color: white;
+        border-radius: 25px;
+        padding: 0.5rem 0.95rem;
+        border: none;
+        cursor: pointer;
+        margin-left: 0.5rem; }
     .projects .layer div {
       position: absolute; }
 
@@ -294,18 +308,18 @@ header {
     text-align: center; }
     .contact .container h2 {
       text-align: left; }
-    .contact .container form {
+    .contact .container .form {
       padding-top: 3.688rem;
       padding-bottom: 1.875rem;
       display: grid;
       width: 100%;
-      opacity: 0.85;
       grid-template-columns: 1fr;
       grid-gap: 1rem; }
-      .contact .container form input,
-      .contact .container form textarea {
+      .contact .container .form input,
+      .contact .container .form textarea {
         font-family: "Lato", sans-serif;
         border-radius: 2px;
+        opacity: 0.85;
         font-weight: 700;
         border: transparent;
         color: gray;
@@ -313,12 +327,14 @@ header {
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
         padding-left: 1.4rem; }
-      .contact .container form input {
+      .contact .container .form input {
         grid-auto-columns: 1;
         grid-row: auto; }
-      .contact .container form textarea {
+      .contact .container .form textarea {
         grid-auto-columns: 2;
         grid-row: 1/4; }
+      .contact .container .form button {
+        display: block; }
 
 /* FOOTER */
 footer {
@@ -327,6 +343,13 @@ footer {
   padding-bottom: 0;
   width: 100%;
   font-size: 0.7em; }
+  footer .media-square {
+    float: right;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer; }
 
 /* MEDIA QUERIES FOR DESKTOPS */
 @media (min-width: 1301px) {
@@ -379,11 +402,11 @@ footer {
     grid-template-columns: 1fr 1fr; }
   .projects .image {
     text-align: center; }
-  form {
+  .form {
     grid-template-columns: 1fr 1fr !important; }
-    form input {
+    .form input {
       grid-auto-columns: 2;
       grid-row: auto; }
-    form textarea {
+    .form textarea {
       grid-auto-columns: 1;
       grid-row: 1/4; } }
