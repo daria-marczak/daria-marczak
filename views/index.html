@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Daria Marczak portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars"></span>
+      </a>
+      <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+        <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+          aria-label="Close main menu">
+          <span class="sr-only">Close main menu</span>
+          <span class="fa fa-times" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li>
+            <a class="scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="scroll" href="#technologies">Technologies</a>
+          </li>
+          <li>
+            <a class="scroll" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello, I'm Daria</h1>
+        <p class="lead">I'm a Junior front-end developer</p>
+      </div>
+    </div>
+    <svg id="curve" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1416.99 174.01">
+      <defs>
+        <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+
+          <stop offset="0%" stop-color="#912A62" />
+          <stop offset="100%" stop-color="#5C2777" />
+
+        </linearGradient>
+      </defs>
+      <g>
+        <path fill="url(#logo-gradient)" class="cls-1" d="M0,280.8S283.66,59,608.94,163.56s437.93,150.57,808,10.34V309.54H0V280.8Z"
+          transform="translate(0 -135.53)" />
+      </g>
+    </svg>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about clearfix" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>I've always enjoyed facing challenges and finding solutions to problems ahead. I also appreciate learning and constant
+        development. Despite my humanities background, I never shied away from logical and analytical thinking. My search
+        for an area that would allow me to consolidate those ambitions has led me to programming: field dynamic enough to
+        provide me with years, if not decades, of opportunities. For now, I am looking for employment as a junior frontend
+        developer, in order to hone my skills and gain an insight in a professional environment. In the long run, I would
+        like to pick one technology - either a language or a framework - and focus on it, getting to know every nook and
+        cranny. </p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="white" points="0,100 100,0 100,100" />
+    </svg>
+  </section>
+
+  <section class="technologies" id="technologies">
+    <div class="container">
+      <h2>Technologies</h2>
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-html5"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>HTML</h3>
+              <p>Web development fundamental markup language I use to create web page or application.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>CSS</h3>
+              <p>The base of front end design. I would love to plunge into the vast possibilities of CSS in the future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-sass"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>SASS</h3>
+              <p>Actually using Sassy CSS as I believe it's more readable. Love being able to predefine colors and fonts names
+                rather than repeating myself.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-html5"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Javascript</h3>
+              <p>The basics of front end development, the technology I intend to develop myself further.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Git-icon-white.svg/120px-Git-icon-white.svg.png" alt="git logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Git</h3>
+              <p>Every projects starts with git init and ends being committed to master branch and pushed to origin master.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-grunt"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Grunt</h3>
+              <p>Great tool to automate tasks such as making images smaller or compiling SCSS to CSS on save.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <img src="https://i.imgur.com/zb78UJ1.png" alt="jQuery logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>jQuery</h3>
+              <p>Awesome library enabling me to write much easier and shorter JavaScript code.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-node-js"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Node.JS</h3>
+              <p>Backend JavaScript functioning asynchronously used to serve files or set up servers. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-npm"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>NPM</h3>
+              <p>Not to invent the wheel over and over again, I use NPM packages. But first thing first, each project starts
+                with npm init.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <i class="fab fa-react"></i>
+              </div>
+            </div>
+            <div class="text">
+              <h3>React</h3>
+              <p>Amazing JavaScript library enabling update of components separately instead of the whole app.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle webpack">
+                <img src="https://cdn.worldvectorlogo.com/logos/webpack.svg" alt="webpack logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Webpack</h3>
+              <p>Bundling tool with higher possibilities than Grunt, used when there is a lot of code static assets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle invert express">
+                <img src="http://mean.io/wp-content/themes/twentysixteen-child/images/express.png" alt="express logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Express</h3>
+              <p>Neat Node framework allowing me to define routings, configurate middleware and many other.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle invert">
+                <img src="https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png" alt="redux logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Redux</h3>
+              <p>State maintaining library creating copies of object rather than rewriting it, great for React.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle invert">
+                <img src="http://pluspng.com/img-png/logo-mongodb-png-mongodb-logo-anything-but-the-simplest-of-web-applications-requires-a-database-to-store-and-serve-content-from-choosing-the-right-database-and-structuring-413.png"
+                  alt="mongo logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>MongoDB</h3>
+              <p>Mix of relational and non-relational database using binary JSON with data presented in collections rather than
+                tables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle invert">
+                <img src="https://vignette.wikia.nocookie.net/logopedia/images/2/25/Visual_Studio_Code_0.10.1_icon.svg/revision/latest/scale-to-width-down/480?cb=20170826185557"
+                  alt="visual studio code logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Visual Studio Code</h3>
+              <p>My favourite editor with integrated terminal and packages to install that facilitates work tremendously.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="row-two">
+            <div class="square">
+              <div class="circle">
+                <img src="https://i.imgur.com/hWpD8FT.png" alt="photoshop logo">
+              </div>
+            </div>
+            <div class="text">
+              <h3>Photoshop</h3>
+              <p>Used not only to cut PSD templates, but also to prepare small graphic projects for myself in my free time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row-three">
+        <div class="column">
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>ActiveBox</h4>
+                <p>Bootstrap-based webpage. From PSD to HTML.</p>
+                <a href="https://daria-marczak.github.io/ActiveBox/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/ActiveBox" target="_blank">
+                  <button type="button" class="view">
+
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/y6Oist8.jpg" alt="active">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>AWAX</h4>
+                <p>Built with CSS grid and touch of Flex, from PSD to HTML.</p>
+                <a href="https://daria-marczak.github.io/awax/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/awax" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/TbqQgpu.png" alt="awax">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Golden</h4>
+                <p>Built with CSS grid and touch of Flex, from PSD to HTML.</p>
+                <a href="https://daria-marczak.github.io/golden/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/golden" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/uXtpuNL.jpg" alt="golden">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Mache</h4>
+                <p>Built with Bootstrap 3, from PSD to HTML.</p>
+                <a href="https://daria-marczak.github.io/mache/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/mache" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/IDtQ2F4.png" alt="mache">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Take</h4>
+                <p>First page ever coded, from PSD to HTML, using 12-column grid layout built by myself.</p>
+                <a href="https://daria-marczak.github.io/take/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/take" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/aA8CEjG.png" alt="take">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Currency converter</h4>
+                <p>Fixer.io API based currency converter.</p>
+                <a href="https://daria-marczak.github.io/currency-converter/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/currency-converter" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/HMc6lAy.png" alt="currency">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Country search engine</h4>
+                <p>A search engine to find informations about countries, based on API.</p>
+                <a href="https://daria-marczak.github.io/search-country/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/search-country" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/rthzdrb.png" alt="countries">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Kanban board</h4>
+                <p>Traditional Trello board able to store your tasks</p>
+                <a href="https://daria-marczak.github.io/kanban/" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/kanban" target="_blank">
+                  <button type="button" class="view">
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/hbbcZPg.png" alt="kanban">
+          </div>
+          <div class="image">
+            <div class="layer">
+              <span>
+                <h4>Poznań map API</h4>
+                <p>App based on Google Maps API to direct you to restaurant of your choice.</p>
+                <a href="https://daria-marczak.github.io/food-map-poznan/" target="_blank">
+                  <button type="button" class="view">
+
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/daria-marczak/food-map-poznan" target="_blank">
+                  <button type="button" class="view">
+
+                    <i class="fas fa-code"></i>
+                  </button>
+                </a>
+              </span>
+            </div>
+            <img src="https://i.imgur.com/eKjZYOK.png" alt="map">
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/daria-marczak" target="_blank">
+        <button type="button" class="button">
+          More projects
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div id="mapGoogle"></div>
+    <div class="container">
+      <h2>Contact</h2>
+      <form method="GET" action="/userform">
+        <div class="form">
+          <input type="text" name="name" placeholder="Your name"></input>
+          <input type="text" name="email" placeholder="Your email"></input>
+          <input type="text" name="subject" placeholder="Subject"></input>
+          <textarea name="message" placeholder="Your message"></textarea>
+        </div>
+
+        <button type="submit" class="button">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="clearfix">
+
+    <div class="container">
+      <div class="row-two">
+        <div class="column">
+          <p>Copyright Daria Marczak</p>
+        </div>
+        <div class="column">
+          <div class="media">
+            <a href="https://www.linkedin.com/in/daria-marczak/" target="_blank">
+              <button class="media-square">
+                <i class="fab fa-linkedin-in"></i>
+              </button>
+            </a>
+            <a href="https://github.com/daria-marczak" target="_blank">
+              <button class="media-square">
+                <i class="fab fa-github"></i>
+              </button>
+          </div>
+          <a>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="xml.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-q8i-yrCjNLX5xVWk6heM4GEdpLwFYFs&callback=initMap">
+  </script>
+</body>
+
+</html>
