@@ -28,12 +28,11 @@ app.post("/userform", (req, res) => {
   `;
   
   let transporter = nodemailer.createTransport({
-    host: 'mail-serwer21504.lh.pl',
+    host: "mail-serwer21504.lh.pl",
     port: 587,
-    secure: false,
     auth: {
-      user: "USERNAME",
-      pass: "PASSWORD"
+      user: "USER",
+      pass: "PASS$"
     },
     tls: {
       rejectUnauthorized: false,

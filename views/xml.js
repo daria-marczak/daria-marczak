@@ -1,5 +1,14 @@
-data = {from: from, to: to, subject: subject, text: html};
-var request = new XMLHttpRequest();
-request.open('POST', 'http://localhost:3000/userform', true);
-xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-request.send(JSON.stringify(data));
+(function () {
+  $('#contact').on('submit', function (e) {
+
+    $.ajax({
+      type: 'post',
+      url: 'https://jumprock.co/mail/marczdaria',
+      data: $('#contact').serialize(),
+      success: function () {
+        alert("Email has been sent!");
+      }
+    });
+    e.preventDefault();
+  });
+});
