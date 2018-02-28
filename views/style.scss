@@ -442,14 +442,13 @@ header {
 footer {
   background-color: #1a1a1a;
   color: white;
-  padding-bottom: 0;
   width: 100%;
   font-size: 0.7em;
-  .media-square {
-    float: right;
+  .media .media-square {
     background-color: transparent;
     color: white;
     border: none;
+    margin-top: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
   }
