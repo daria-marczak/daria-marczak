@@ -1,33 +1,28 @@
-$(function() {
-  var form = $("#contact");
+var form = $("#contact");
+
+$(function () {
   var formMessages = $("#form-messages");
   var formData = $(form).serialize();
   $.ajax({
-    type: "POST",
-    url: "https://jumprock.co/mail/marczdaria",
-    data: formData
-  })
-  .done(function(response) {
-    $(formMessages).removeClass("error");
-    $(formMessages).addClass("success");
-    $(formMessages).text(response);
+      type: "POST",
+      url: "http://localhost:3000/userform",
+      form: { key: "value" }
+    })
+    .done(function (response) {
+      console.log("sent");
+    })
+    .fail(function (data) {
+      $(formMessages).removeClass("success");
+      $(formMessages).addClass("error");
 
-    $("name").val("");
-    $("email").val("");
-    $("message").val("");
-  })
-  .fail(function(data) {
-    $(formMessages).removeClass("success");
-    $(formMessages).addClass("error");
-
-    if (data.reponseText !== "") {
-      $(formMessages).text(data.responseText);
-    } else {
-      $(formMessages).text("Oops, something went wrong");
-    }
-  });
+      if (data.reponseText !== "") {
+        $(formMessages).text(data.responseText);
+      } else {
+        $(formMessages).text("Oops, something went wrong");
+      }
+    });
 })
 
-$(form).submit(function(event) {
+$(form).submit(function (event) {
   event.preventDefault();
-})
+});

@@ -1,2 +1,6 @@
 node_modules/
 colors.png
+views/xml.js
+views/xmlfornode.js
+views/xmlfornodewithajaxdatanotworking.js
+views/forJump.js

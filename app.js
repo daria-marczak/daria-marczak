@@ -31,8 +31,8 @@ app.post("/userform", (req, res) => {
     host: "mail-serwer21504.lh.pl",
     port: 587,
     auth: {
-      user: "USER",
-      pass: "PASS$"
+      user: "daria@serwer21504.lh.pl",
+      pass: "3Nf1n%"
     },
     tls: {
       rejectUnauthorized: false,
@@ -41,8 +41,8 @@ app.post("/userform", (req, res) => {
 
 
   let mailOptions = {
-    from: '"Nodemailer contact" <dariamarczak@mail-serwer21504.lh.pl>',
-    to: 'marczak.ria@gmail.com',
+    from: '"Nodemailer contact" <dariamarczak@serwer21504.lh.pl>',
+    to: 'daria@serwer21504.lh.pl',
     subject: 'Node contact request',
     html: output
   };
@@ -53,6 +53,7 @@ app.post("/userform", (req, res) => {
     }
     console.log('Message sent: %s', info.messageId);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    alert("Message has been sent");
   });
 })
 
