@@ -20,14 +20,15 @@ h2 {
 
 h1 {
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 5em;
   margin-bottom: 1rem;
+  color: #912a62;
 }
 
 h2:after {
   display: block;
   content: "";
-  border-top: 5px solid #5C2777;
+  border-top: 5px solid #912a62;
   width: 6%;
   transform: translateY(0.5em);
   padding-bottom: 1em;
@@ -48,19 +49,17 @@ p {
   border-radius: 25px;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(0deg, #912A62, #5C2777);
+  background: #912a62;
   border: none;
   color: white;
   cursor: pointer;
   transition: 0.6s ease-in-out;
 }
-
 .button:hover {
   transform: scale(1.1);
 }
 
 /* NAVIGATION */
-
 .clearfix {
   content: "";
   clear: both;
@@ -90,15 +89,13 @@ p {
 header {
   min-height: 20vh;
   width: 100%;
-  color: #5C2777;
+  color: #5c2777;
 }
-
 header svg {
   padding-bottom: 0;
   margin-bottom: 0;
   position: relative;
 }
-
 header nav {
   z-index: 11;
   margin: 0;
@@ -106,7 +103,6 @@ header nav {
   position: fixed;
   width: 100%;
 }
-
 header nav ul {
   display: flex;
   flex-direction: column;
@@ -115,24 +111,20 @@ header nav ul {
   margin: 0;
   display: none;
 }
-
 header nav ul.opening {
   display: block;
   width: 100%;
   position: absolute;
   height: 30px;
 }
-
 header nav ul li {
-  border-bottom: 1px solid #5C2777;
+  border-bottom: 1px solid #5c2777;
 }
-
 header nav ul li:last-child {
   border-bottom: none;
 }
-
 header nav a {
-  color: #5C2777;
+  color: #912a62;
   background: rgba(0, 0, 0, 0.85);
   display: block;
   padding: 1.5em 1.5em 1.5em 1.5em;
@@ -140,7 +132,6 @@ header nav a {
   text-decoration: none;
   color: white;
 }
-
 header nav .menu-toggle {
   z-index: 111;
   position: fixed;
@@ -149,39 +140,33 @@ header nav .menu-toggle {
   right: 0.5em;
   cursor: pointer;
 }
-
 header nav .menu-toggle .hamburger,
 header nav .menu-toggle .hamburger::before,
 header nav .menu-toggle .hamburger::after {
   content: "";
   display: block;
-  background: #912A62;
+  background: #912a62;
   height: 3px;
   width: 2em;
   border-radius: 3px;
   -webkit-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms;
 }
-
 header nav .menu-toggle .hamburger::before {
   -webkit-transform: translateY(-7px);
   transform: translateY(-7px);
 }
-
 header nav .menu-toggle .hamburger::after {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
 }
-
 header nav .open .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
 header nav .open .hamburger::before {
   display: none;
 }
-
 header nav .open .hamburger::after {
   -webkit-transform: translateY(-1px) rotate(-90deg);
   transform: translateY(-1px) rotate(-90deg);
@@ -196,7 +181,6 @@ header nav .open .hamburger::after {
 .shape {
   padding-top: 0;
 }
-
 .shape svg {
   position: relative;
   bottom: 0;
@@ -205,23 +189,19 @@ header nav .open .hamburger::after {
 }
 
 /* ABOUT SECTION */
-
 .about {
-  background-color: #5C2777;
+  background-color: #912a62;
   color: white;
   margin-top: -6px;
   padding-top: 0;
 }
-
 .about h2:after {
   border-top: 5px solid white;
 }
-
 .about .container-half {
   width: 50%;
   padding-left: 10rem;
 }
-
 .about svg {
   height: 20vw;
   width: 80%;
@@ -230,28 +210,23 @@ header nav .open .hamburger::after {
 }
 
 /* TECHNOLOGIES */
-
 .technologies {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-
 .technologies .row {
   display: grid;
   grid-template-columns: 1fr;
 }
-
 .technologies .row-two {
   display: grid;
   grid-template-columns: 0.3fr 2fr;
 }
-
 .technologies .row-two .square {
   margin-right: 1em;
   display: flex;
   align-items: center;
 }
-
 .technologies .row-two .square .circle {
   background-color: #1f1f1f;
   width: 4rem;
@@ -265,49 +240,41 @@ header nav .open .hamburger::after {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-
-.technologies .row-two .square .circle img {
+.technologies .row-two .square .circle img,
+.technologies .row-two .square .circle svg {
   width: 1em;
   height: 1em;
 }
-
 .technologies .row-two .square .webpack img {
   margin-left: 0.15em;
 }
-
 .technologies .row-two .square .invert img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
-
 .technologies .row-two .square .express img {
   width: 1em;
   height: auto;
   filter: invert(88%);
 }
-
 .technologies .row-two .text h3 {
   margin-bottom: 0;
 }
 
 /* PROJECTS SECTION */
-
 .projects {
   background-color: #fcfcfc;
   padding-top: 6rem;
   padding-bottom: 2rem;
   text-align: center;
 }
-
 .projects button a {
   text-decoration: none;
   color: white;
 }
-
 .projects h2 {
   text-align: left;
 }
-
 .projects .image {
   position: relative;
   padding: 0;
@@ -315,20 +282,17 @@ header nav .open .hamburger::after {
   margin-bottom: 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
 .projects .image img {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
-
 .projects .image:before,
 .projects .image:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .projects .layer {
   position: absolute;
   width: 100%;
@@ -338,35 +302,31 @@ header nav .open .hamburger::after {
   align-items: center;
   align-content: center;
   background-color: rgba(109, 29, 138, 0.75);
-  transition: .6s;
+  transition: 0.6s;
   cursor: pointer;
 }
-
 .projects .layer:hover {
   opacity: 1;
-  box-shadow: inset 0 0 0 0 rgba(74, 74, 74, 0.85), inset 0 0 0 16px rgba(245, 245, 245, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 0 rgba(74, 74, 74, 0.85),
+    inset 0 0 0 16px rgba(245, 245, 245, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
 .projects .layer span {
   color: white;
   text-align: center;
   margin: 0 auto;
   width: 90%;
 }
-
 .projects .layer span h4 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
   margin-bottom: 0;
 }
-
 .projects .layer span p {
   margin-top: 0.2em;
   font-size: 0.75em;
   margin-bottom: 0.1em;
 }
-
 .projects .layer span .view {
   background-color: #1f1f1f;
   color: white;
@@ -376,24 +336,20 @@ header nav .open .hamburger::after {
   cursor: pointer;
   margin-left: 0.5rem;
 }
-
 .projects .layer div {
   position: absolute;
 }
 
 /* CONTACT SECTION */
-
 .contact {
   position: relative;
 }
-
 .contact #mapGoogle {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   min-height: 100vh;
   z-index: 1;
 }
-
 .contact .container {
   z-index: 5;
   top: 50%;
@@ -402,11 +358,9 @@ header nav .open .hamburger::after {
   left: 10%;
   text-align: center;
 }
-
 .contact .container h2 {
   text-align: left;
 }
-
 .contact .container form {
   padding-top: 3.688rem;
   padding-bottom: 1.875rem;
@@ -415,7 +369,6 @@ header nav .open .hamburger::after {
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
-
 .contact .container form input,
 .contact .container form textarea {
   font-family: "Lato", sans-serif;
@@ -429,8 +382,7 @@ header nav .open .hamburger::after {
   padding-bottom: 1.2rem;
   padding-left: 1.4rem;
 }
-
-.contact .container form input[type=submit] {
+.contact .container form input[type="submit"] {
   margin: 0 auto;
   padding: 0.95em 1.5rem;
   opacity: 1;
@@ -439,14 +391,12 @@ header nav .open .hamburger::after {
 }
 
 /* FOOTER */
-
 footer {
   background-color: #1a1a1a;
   color: white;
   width: 100%;
   font-size: 0.7em;
 }
-
 footer .media .media-square {
   background-color: transparent;
   color: white;
@@ -458,7 +408,6 @@ footer .media .media-square {
 }
 
 /* MEDIA QUERIES FOR DESKTOPS */
-
 @media (min-width: 1301px) {
   header .menu-toggle {
     display: none;
@@ -468,7 +417,7 @@ footer .media .media-square {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    color: #5C2777;
+    color: #5c2777;
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.57);
   }
@@ -485,36 +434,40 @@ footer .media .media-square {
     margin: 0;
     border: 0;
     background-color: transparent;
-    color: #5C2777;
+    color: #912a62;
     font-weight: 500;
   }
   header nav ul li a:hover,
   header nav ul li a:active {
     background-color: transparent;
   }
+
   .row-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
+
   .technologies .row,
   .projects .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .projects .image {
     text-align: center;
   }
+
   form {
     grid-auto-columns: 1fr 1fr !important;
   }
   form input {
     grid-row: auto;
   }
-  form input[type=submit] {
+  form input[type="submit"] {
     grid-column: span 2;
   }
-  form input[type=text] {
+  form input[type="text"] {
     grid-auto-columns: 1;
     grid-row: auto;
   }
@@ -523,7 +476,6 @@ footer .media .media-square {
     grid-row: 1/4;
   }
 }
-
 @media (max-height: 768px) {
   .contact #mapGoogle {
     min-height: 150vh;
