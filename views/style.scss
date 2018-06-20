@@ -37,7 +37,7 @@ h2 {
 
 h1 {
   font-weight: 300;
-  font-size: 5em;
+  font-size: 4.5em;
   margin-bottom: 1rem;
   color: $color-secondary-1-0;
 }
@@ -191,7 +191,7 @@ header {
 }
 
 .jumbotron {
-  padding-top: 30vh;
+  padding-top: 0;
   min-height: 50vh;
   padding-bottom: 0;
 }
@@ -269,10 +269,12 @@ header {
         -webkit-filter: invert(100%);
         filter: invert(100%);
       }
-      .express img {
-        width: 1em;
-        height: auto;
-        filter: invert(88%);
+      .jest img {
+        width: 4em;
+        height: 2em;
+      }.jest img {
+        width: 4em;
+        height: 2em;
       }
     }
     .text h3 {
@@ -471,6 +473,9 @@ footer {
           }
         }
       }
+    }
+    .jumbotron {
+      padding-top: 30vh;
     }
   }
   .row-three {
